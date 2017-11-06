@@ -1,0 +1,14 @@
+.container {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 30rpx 0;
+  background: #f7f7f7;
+}
+
+.row {
+  background: #fff;
+  border-top: 2rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+  padding: 20rpx 30rpx;
+  margin-bottom: 30rpx;
+}

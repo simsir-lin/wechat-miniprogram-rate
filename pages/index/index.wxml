@@ -1,0 +1,13 @@
+<view class="container">
+  <view class='row'>
+    <multiple-rate rate="4" disabled="true"></multiple-rate>
+  </view>
+  <view class='row'>
+    <multiple-rate rate="3" icon="heart" disabled="true"></multiple-rate>
+  </view>
+  <view class='row'>
+    <multiple-rate bindchange="handleChange">
+      <text style='margin-left:20px;'>{{ rate }}分</text>
+    </multiple-rate>
+  </view>
+</view>
