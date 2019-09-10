@@ -1,38 +1,56 @@
-# multiple-rate-wxapp
-微信小程序评分组件 wxapp multiple rate component
+# wechat-miniprogram-rate
+微信小程序评分组件🌟
 
-![multiple-rate-wxapp](http://olf3xgrra.bkt.clouddn.com/multiple-rate-wxapp-preview.jpg "multiple-rate-wxapp")
+![预览图](https://raw.githubusercontent.com/simsir-lin/wechat-miniprogram-rate/master/screenshot.png "预览图")
 
 ### 下载
 ``` bash
-git clone https://github.com/simsir-lin/multiple-rate-wxapp.git
+git clone https://github.com/simsir-lin/wechat-miniprogram-rate.git
 ```
-
-### 预览
-打开[微信web开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html)，'本地小程序项目 - 添加项目'，项目目录选择为 multiple-rate-wxapp 的目录就可以了，添加项目后就可以进行组件源码的查看和预览demo了。
 
 ### 使用
-1. 将 multiple-rate-wxapp 目录下的components文件夹下的`multiple-rate`拷贝到你的小程序目录下
-
-2. 在你要使用的页面的json文件中引入组件，如：index页面的index.json
+1. 安装
+```bash
+npm install --save wechat-miniprogram-rate
 ```
+2. 在你的页面json中添加
+``` javascript
 {
-  "navigationBarTitleText": "首页",
-  "usingComponents": {
-    "multiple-rate": "你的目录/multiple-rate/multiple-rate"
-  }
+     "usingComponents": {
+       "rate": "/components/index"
+     }
 }
 ```
-
 3. 在wxml中即可使用组件
-```
-<multiple-rate rate="4" disabled="true"></multiple-rate>
+``` html
+<rate></rate>
 ```
 
-4. 如看不明白请直接参考项目实例(/pages/index/index)
+### 调试开发
+1. 打开[微信web开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html)，'本地小程序项目 - 添加项目'，项目目录选择为 miniprogram_dev 目录
+2. 安装依赖 `npm install`
+3. 构建命令 `npm run dev`
+4. 更多帮助信息查看[帮助文档](https://github.com/wechat-miniprogram/miniprogram-custom-component)
 
 ### 注意
-* 微信小程序基础库版本至少为1.6.4
+* 小程序基础库版本 2.2.1 或以上、及开发者工具 1.02.1808300 或以上开始
+* 初次引入需先执行开发者工具的 npm 构建，[微信官方 npm 文档](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html)
+
+### Props
+
+| name     | description              | type     | default value |
+| :---------------- | :----------------------- | :------  | :------------ |
+| value            |  选中的星星数                | Number    | 0        |
+| placeholder             | 星星占位符                 | Number    | 0          |
+| allowHalf             | 是否可半星                 | Boolean    | true          |
+| disabled             | 是否禁用选择                 | Boolean    | false       |
+| length             | 星星个数                 | Number    | 5       |
+
+### events
+
+| name     | description              | parameters     |
+| :---------------- | :----------------------- | :------  |
+| change            |  改变了星星                | 改变的数值    |
 
 ### 贡献
 如果你有好的意见或建议，欢迎给我提issue!
