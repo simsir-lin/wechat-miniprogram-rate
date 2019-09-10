@@ -16,9 +16,9 @@ npm install --save wechat-miniprogram-rate
 2. 在你的页面json中添加
 ``` javascript
 {
-     "usingComponents": {
-       "rate": "/components/index"
-     }
+  "usingComponents": {
+    "rate": "wechat-miniprogram-rate"
+  }
 }
 ```
 3. 在wxml中即可使用组件
