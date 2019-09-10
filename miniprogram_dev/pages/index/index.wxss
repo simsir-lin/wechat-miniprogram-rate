@@ -1,0 +1,17 @@
+page {
+  background-color: #f9f9f9;
+}
+
+.bar {
+  padding: 20rpx 50rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+
+.bar--text {
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  color: #666;
+}

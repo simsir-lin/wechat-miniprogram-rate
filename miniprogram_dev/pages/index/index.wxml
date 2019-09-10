@@ -1,0 +1,20 @@
+<view class="bar">
+  <rate value="{{value}}" bindchange="setValue"></rate>
+  <view class="bar--text">{{ value }}</view>
+</view>
+<view class="bar">
+  <rate placeholder="3.5" bindchange="showResult"></rate>
+  <view class="bar--text">有星星占位符</view>
+</view>
+<view class="bar">
+  <rate value="3" allow-half="{{false}}" bindchange="showResult"></rate>
+  <view class="bar--text">不可半星</view>
+</view>
+<view class="bar">
+  <rate value="4.5" disabled="{{true}}" bindchange="showResult"></rate>
+  <view class="bar--text">禁用状态</view>
+</view>
+<view class="bar">
+  <rate value="4.5" length="8" bindchange="showResult"></rate>
+  <view class="bar--text">可8个星星</view>
+</view>
