@@ -1,3 +1,5 @@
 {
-	"dependencies": {}
+  "dependencies": {
+    "wechat-miniprogram-rate": "^1.0.0"
+  }
 }

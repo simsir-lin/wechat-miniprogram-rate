@@ -1,8 +1,8 @@
 {
   "name": "wechat-miniprogram-rate",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
-  "main": "miniprogram_dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "gulp dev --develop",
     "watch": "gulp watch --develop --watch",
@@ -16,7 +16,7 @@
     "lint": "eslint \"src/**/*.js\" --fix",
     "lint-tools": "eslint \"tools/**/*.js\" --rule \"import/no-extraneous-dependencies: false\" --fix"
   },
-  "miniprogram": "miniprogram_dist",
+  "miniprogram": "src",
   "jest": {
     "testEnvironment": "jsdom",
     "testURL": "https://jest.test",

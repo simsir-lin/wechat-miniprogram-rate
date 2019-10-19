@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "rate": "/components/index"
+    "rate": "wechat-miniprogram-rate"
   }
 }
